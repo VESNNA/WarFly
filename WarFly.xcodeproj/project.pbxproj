@@ -14,6 +14,7 @@
 		5B5ABCFE25A779EB0088BEA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B5ABCFD25A779EB0088BEA1 /* Assets.xcassets */; };
 		5B5ABD0925A779EC0088BEA1 /* WarFlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5ABD0825A779EC0088BEA1 /* WarFlyTests.swift */; };
 		5B5ABD1425A779EC0088BEA1 /* WarFlyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5ABD1325A779EC0088BEA1 /* WarFlyUITests.swift */; };
+		5B860AE725B652630029D3FD /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B860AE625B652630029D3FD /* Background.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		5B5ABD0F25A779EC0088BEA1 /* WarFlyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WarFlyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B5ABD1325A779EC0088BEA1 /* WarFlyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarFlyUITests.swift; sourceTree = "<group>"; };
 		5B5ABD1525A779EC0088BEA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B860AE625B652630029D3FD /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				5B5ABCF025A779E40088BEA1 /* AppDelegate.swift */,
 				5B5ABCF625A779E40088BEA1 /* GameScene.swift */,
 				5B5ABCF825A779E40088BEA1 /* GameViewController.swift */,
+				5B860AE625B652630029D3FD /* Background.swift */,
 				5B5ABCFA25A779E40088BEA1 /* Main.storyboard */,
 				5B5ABCFD25A779EB0088BEA1 /* Assets.xcassets */,
 				5B5ABCFF25A779EB0088BEA1 /* Info.plist */,
@@ -257,6 +260,7 @@
 				5B5ABCF725A779E40088BEA1 /* GameScene.swift in Sources */,
 				5B5ABCF925A779E40088BEA1 /* GameViewController.swift in Sources */,
 				5B5ABCF125A779E40088BEA1 /* AppDelegate.swift in Sources */,
+				5B860AE725B652630029D3FD /* Background.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
