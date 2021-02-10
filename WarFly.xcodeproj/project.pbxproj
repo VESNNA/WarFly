@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5B10FB1125D30C1C00F7ADB6 /* Island.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B10FB1025D30C1C00F7ADB6 /* Island.swift */; };
+		5B4D5AF225D4823E00C12060 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4D5AF125D4823E00C12060 /* Cloud.swift */; };
 		5B5ABCF125A779E40088BEA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5ABCF025A779E40088BEA1 /* AppDelegate.swift */; };
 		5B5ABCF725A779E40088BEA1 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5ABCF625A779E40088BEA1 /* GameScene.swift */; };
 		5B5ABCF925A779E40088BEA1 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5ABCF825A779E40088BEA1 /* GameViewController.swift */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		5B10FB1025D30C1C00F7ADB6 /* Island.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Island.swift; sourceTree = "<group>"; };
+		5B4D5AF125D4823E00C12060 /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
 		5B5ABCED25A779E40088BEA1 /* WarFly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WarFly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B5ABCF025A779E40088BEA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B5ABCF625A779E40088BEA1 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				5B5ABCF825A779E40088BEA1 /* GameViewController.swift */,
 				5B860AE625B652630029D3FD /* Background.swift */,
 				5B10FB1025D30C1C00F7ADB6 /* Island.swift */,
+				5B4D5AF125D4823E00C12060 /* Cloud.swift */,
 				5B5ABCFA25A779E40088BEA1 /* Main.storyboard */,
 				5B5ABCFD25A779EB0088BEA1 /* Assets.xcassets */,
 				5B5ABCFF25A779EB0088BEA1 /* Info.plist */,
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B5ABCF725A779E40088BEA1 /* GameScene.swift in Sources */,
+				5B4D5AF225D4823E00C12060 /* Cloud.swift in Sources */,
 				5B5ABCF925A779E40088BEA1 /* GameViewController.swift in Sources */,
 				5B5ABCF125A779E40088BEA1 /* AppDelegate.swift in Sources */,
 				5B10FB1125D30C1C00F7ADB6 /* Island.swift in Sources */,
