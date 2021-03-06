@@ -25,6 +25,9 @@ class PlayerPlane: SKSpriteNode {
     var centerTextureArrayAnimation = [SKTexture]()
     var moveDirection: TurnDirection = .none
     var isTurning = false
+    let animationSpriteStrides = [(13, 1, -1),
+                                  (13, 26, 1),
+                                  (13, 13, 1)]
     
     static func populate(at point: CGPoint) -> PlayerPlane {
         let playerPlaneTexture = SKTexture(imageNamed: "airplane_3ver2_13")
@@ -46,8 +49,6 @@ class PlayerPlane: SKSpriteNode {
     }
     
     func performFly() {
-        planeAnimationFillArray()
-        
         motionManager.accelerometerUpdateInterval = 0.2
         motionManager.startAccelerometerUpdates(to: OperationQueue.current!) { [unowned self] (data, error) in
             if let data = data {
@@ -67,50 +68,28 @@ class PlayerPlane: SKSpriteNode {
         self.run(planeSequenceForever)
     }
     
-    fileprivate func planeAnimationFillArray() { //TODO: Refactor repeating code
-        SKTextureAtlas.preloadTextureAtlases([SKTextureAtlas(named: "PlayerPlane")]) {
-            self.leftTextureArrayAnimation = {
-                var array = [SKTexture]()
-                for i in stride(from: 13, through: 1, by: -1) {
-                    let number = String(format: "%02d", i)
-                    let texture = SKTexture(imageNamed: "airplane_3ver2_\(number)")
-                    array.append(texture)
+    fileprivate func preloadTextureArrays() {
+        for i in 0...2 {
+            self.preloadArray(_stride: animationSpriteStrides[i]) { [unowned self] array in
+                switch i {
+                case 0: self.leftTextureArrayAnimation = array
+                case 1: self.rightTextureArrayAnimation = array
+                case 2: self.centerTextureArrayAnimation = array
+                default: break
                 }
-                
-                SKTexture.preload(array) {
-                    print("Textures preload is done")
-                }
-                return array
-            }()
+            }
         }
-        
-        SKTextureAtlas.preloadTextureAtlases([SKTextureAtlas(named: "PlayerPlane")]) {
-            self.rightTextureArrayAnimation = {
-                var array = [SKTexture]()
-                for i in stride(from: 13, through: 26, by: 1) {
-                    let number = String(format: "%02d", i)
-                    let texture = SKTexture(imageNamed: "airplane_3ver2_\(number)")
-                    array.append(texture)
-                }
-                
-                SKTexture.preload(array) {
-                    print("Textures preload is done")
-                }
-                return array
-            }()
+    }
+    
+    fileprivate func preloadArray(_stride: (Int, Int, Int), callback: @escaping (_ array: [SKTexture]) -> ()) {
+        var array = [SKTexture]()
+        for i in stride(from: _stride.0, through: _stride.1, by: _stride.2) {
+            let number = String(format: "%02d", i)
+            let texture = SKTexture(imageNamed: "airplane_3ver2_\(number)")
+            array.append(texture)
         }
-        
-        SKTextureAtlas.preloadTextureAtlases([SKTextureAtlas(named: "PlayerPlane")]) {
-            self.centerTextureArrayAnimation = {
-                var array = [SKTexture]()
-                let texture = SKTexture(imageNamed: "airplane_3ver2_13")
-                array.append(texture)
-                
-                SKTexture.preload(array) {
-                    print("Textures preload is done")
-                }
-                return array
-            }()
+        SKTexture.preload(array) {
+            callback(array)
         }
     }
     
