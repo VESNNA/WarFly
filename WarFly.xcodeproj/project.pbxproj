@@ -10,7 +10,6 @@
 		5B10FB1125D30C1C00F7ADB6 /* Island.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B10FB1025D30C1C00F7ADB6 /* Island.swift */; };
 		5B1CCCB225DC659F00F96CD1 /* PowerUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1CCCB125DC659F00F96CD1 /* PowerUp.swift */; };
 		5B1CCCB825DC665600F96CD1 /* GreenPowerUp.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 5B1CCCB725DC665600F96CD1 /* GreenPowerUp.atlas */; };
-		5B1CCCBD25DC68DC00F96CD1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B1CCCBC25DC68DC00F96CD1 /* Info.plist */; };
 		5B4D5AF225D4823E00C12060 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4D5AF125D4823E00C12060 /* Cloud.swift */; };
 		5B5ABCF125A779E40088BEA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5ABCF025A779E40088BEA1 /* AppDelegate.swift */; };
 		5B5ABCF725A779E40088BEA1 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5ABCF625A779E40088BEA1 /* GameScene.swift */; };
@@ -213,7 +212,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1230;
-				LastUpgradeCheck = 1230;
+				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					5B5ABCEC25A779E40088BEA1 = {
 						CreatedOnToolsVersion = 12.3;
@@ -256,7 +255,6 @@
 				5B1CCCB825DC665600F96CD1 /* GreenPowerUp.atlas in Resources */,
 				5BBEB1F125D5D9FA00DD49A4 /* PlayerPlane.atlas in Resources */,
 				5B5ABCFC25A779E40088BEA1 /* Main.storyboard in Resources */,
-				5B1CCCBD25DC68DC00F96CD1 /* Info.plist in Resources */,
 				5B5ABCFE25A779EB0088BEA1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
