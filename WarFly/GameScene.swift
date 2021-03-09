@@ -22,21 +22,34 @@ class GameScene: SKScene {
             self.player.performFly()
         }
         
+        spawnPowerUp()
+        spawnEnemy(count: 5)
+    }
+    
+    fileprivate func spawnEnemy(count: Int) {
+        let enemyTextureAtlas = SKTextureAtlas(named: "Enemy_1")
+        SKTextureAtlas.preloadTextureAtlases([enemyTextureAtlas]) {
+            Enemy.textureAtlas = enemyTextureAtlas
+            let waitAction = SKAction.wait(forDuration: 1.0)
+            let spawnEnemy = SKAction.run {
+                let enemy = Enemy()
+                enemy.position = CGPoint(x: self.size.width / 2,
+                                         y: self.size.height + 110)
+                self.addChild(enemy)
+                enemy.flyEnemy()
+            }
+            let spawnAction = SKAction.sequence([waitAction, spawnEnemy])
+            let repeatAction = SKAction.repeat(spawnAction, count: count)
+            self.run(repeatAction)
+        }
+    }
+    
+    fileprivate func spawnPowerUp() {
         let powerUp = PowerUp()
         powerUp.performRotation()
         powerUp.position = CGPoint(x: self.size.width / 2,
                                    y: self.size.height / 2)
         self.addChild(powerUp)
-        
-        let enemyTextureAtlas = SKTextureAtlas(named: "Enemy_1")
-        SKTextureAtlas.preloadTextureAtlases([enemyTextureAtlas]) {
-            Enemy.textureAtlas = enemyTextureAtlas
-            let enemy = Enemy()
-            enemy.position = CGPoint(x: self.size.width / 2,
-                                     y: self.size.height / 2 * 3)
-            self.addChild(enemy)
-        }
-        
     }
     
     fileprivate func spawnClouds() {
