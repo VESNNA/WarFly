@@ -99,5 +99,12 @@ class GameScene: SKScene {
     
     override func didSimulatePhysics() {
         
+        player.checkPosition()
+        
+        enumerateChildNodes(withName: "removableSprite") { (node, stop) in
+            if node.position.y < -100 {
+                node.removeFromParent()
+            }
+        }
     }
 }

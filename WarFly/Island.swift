@@ -18,6 +18,7 @@ final class Island: SKSpriteNode, GameBackgroundSpriteable {
         island.zPosition = 1
         island.run(rotateForRandomAngle())
         island.run(move(from: island.position))
+        island.name = "removableSprite"
         return island
     }
     

@@ -17,6 +17,7 @@ final class Cloud: SKSpriteNode, GameBackgroundSpriteable {
         cloud.position = randomPoint()
         cloud.zPosition = 10
         cloud.run(move(from: cloud.position))
+        cloud.name = "removableSprite"
         return cloud
     }
     
