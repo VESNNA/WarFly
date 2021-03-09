@@ -49,6 +49,7 @@ class PlayerPlane: SKSpriteNode {
     }
     
     func performFly() {
+        preloadTextureArrays()
         motionManager.accelerometerUpdateInterval = 0.2
         motionManager.startAccelerometerUpdates(to: OperationQueue.current!) { [unowned self] (data, error) in
             if let data = data {

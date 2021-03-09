@@ -47,15 +47,16 @@ class GameScene: SKScene {
             let textureAtlas = arrayOfAtlases[randomNumber]
             
             let waitAction = SKAction.wait(forDuration: 1.0)
-            let spawnEnemy = SKAction.run { [unowned self] in
+            let spawnEnemy = SKAction.run ({ [unowned self] in
                 let textureNames = textureAtlas.textureNames.sorted()
-                let texture = textureAtlas.textureNamed((textureAtlas.textureNames[12]))
+                let texture = textureAtlas.textureNamed(textureNames[12])
                 let enemy = Enemy(enemyTexture: texture)
                 enemy.position = CGPoint(x: self.size.width / 2,
                                          y: self.size.height + 110)
                 self.addChild(enemy)
                 enemy.flyEnemy()
-            }
+            })
+            
             let spawnAction = SKAction.sequence([waitAction, spawnEnemy])
             let repeatAction = SKAction.repeat(spawnAction, count: 3)
             self.run(repeatAction)
