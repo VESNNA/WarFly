@@ -23,7 +23,6 @@ class GameScene: SKScene {
         }
         
         spawnPowerUp()
-        //spawnEnemy(count: 5)
         spawnEnemies()
     }
     
@@ -124,6 +123,13 @@ class GameScene: SKScene {
         self.addChild(player)
     }
     
+    fileprivate func playerFire() {
+        let shot = YellowShot()
+        shot.position = self.player.position
+        shot.startMovement()
+        self.addChild(shot)
+    }
+    
     override func didSimulatePhysics() {
         
         player.checkPosition()
@@ -133,5 +139,15 @@ class GameScene: SKScene {
                 node.removeFromParent()
             }
         }
+        
+        enumerateChildNodes(withName: "shotSprite") { (node, stop) in
+            if node.position.y > self.size.height + 100 {
+                node.removeFromParent()
+            }
+        }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        playerFire()
     }
 }
