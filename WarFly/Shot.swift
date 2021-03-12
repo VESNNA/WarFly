@@ -12,15 +12,14 @@ class Shot: SKSpriteNode {
     
     fileprivate let initialSize = CGSize(width: 187, height: 237)
     fileprivate let textureAtlas: SKTextureAtlas!
-    fileprivate var textureNameBeginsWith = ""
+    fileprivate var textureNameBeingsWith = ""
     fileprivate var animationSpriteArray = [SKTexture]()
     
     init(textureAtlas: SKTextureAtlas) {
         self.textureAtlas = textureAtlas
         let textureName = textureAtlas.textureNames.sorted()[0]
         let texture = textureAtlas.textureNamed(textureName)
-        textureNameBeginsWith = String(textureName.dropLast(6))
-        
+        textureNameBeingsWith = String(textureName.dropLast(6))
         super.init(texture: texture, color: .clear, size: initialSize)
         self.setScale(0.3)
         self.name = "shotSprite"
@@ -30,14 +29,14 @@ class Shot: SKSpriteNode {
     func startMovement() {
         performRotation()
         
-        let moveUp = SKAction.moveTo(y: screenSize.height + 100, duration: 2.0)
-        self.run(moveUp)
+        let moveDown = SKAction.moveTo(y: screenSize.height + 100, duration: 2)
+        self.run(moveDown)
     }
     
     fileprivate func performRotation() {
         for i in 1...32 {
             let number = String(format: "%02d", i)
-            animationSpriteArray.append(SKTexture(imageNamed: textureNameBeginsWith + number.description))
+            animationSpriteArray.append(SKTexture(imageNamed: textureNameBeingsWith + number.description))
         }
         
         SKTexture.preload(animationSpriteArray) {
