@@ -84,7 +84,7 @@ class GameScene: SKScene {
     fileprivate func spawnClouds() {
         let spawnCloudWait = SKAction.wait(forDuration: 1)
         let spawnCloudAction = SKAction.run {
-            let cloud = Cloud.populate()
+            let cloud = Cloud.populate(at: nil)
             self.addChild(cloud)
         }
         
@@ -96,8 +96,8 @@ class GameScene: SKScene {
     fileprivate func spawnIslands() {
         let spawnIslandWait = SKAction.wait(forDuration: 2)
         let spawnIslandAction = SKAction.run {
-            let cloud = Island.populate()
-            self.addChild(cloud)
+            let island = Island.populate(at: nil)
+            self.addChild(island)
         }
         
         let spawnIslandSequence = SKAction.sequence([spawnIslandWait, spawnIslandAction])
@@ -113,15 +113,13 @@ class GameScene: SKScene {
         self.addChild(background)
         
         let screen = UIScreen.main.bounds
-        for _ in 1...5 {
-            let island1 = Island.populate(at: CGPoint(x: 100, y: 100))
-            self.addChild(island1)
-            
-            let island2 = Island.populate(at: CGPoint(x: self.size.width - 100,
-                                                      y: self.size.height - 200))
-            self.addChild(island2)
-        }
+        let island1 = Island.populate(at: CGPoint(x: 100, y: 200))
+        self.addChild(island1)
         
+        let island2 = Island.populate(at: CGPoint(x: self.size.width - 100, y: self.size.height - 200))
+        self.addChild(island2)
+        
+        player = PlayerPlane.populate(at: CGPoint(x: screen.size.width / 2, y: 100))
         player = PlayerPlane.populate(at: CGPoint(x: screen.size.width/2, y: 100))
         self.addChild(player)
     }

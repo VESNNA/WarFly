@@ -9,29 +9,17 @@ import SpriteKit
 import GameplayKit
 
 final class Island: SKSpriteNode, GameBackgroundSpriteable {
-    static func populate() -> Island {
-        
-        let islandImageName = configureName()
-        let island = Island(imageNamed: islandImageName)
-        island.setScale(randomScaleFactor)
-        island.position = randomPoint()
-        island.zPosition = 1
-        island.run(rotateForRandomAngle())
-        island.run(move(from: island.position))
-        island.name = "removableSprite"
-        return island
-    }
-    
-    static func populate(at point: CGPoint) -> Island {
-        
-        let islandImageName = configureName()
-        let island = Island(imageNamed: islandImageName)
-        island.setScale(randomScaleFactor)
-        island.position = point
-        island.zPosition = 1
-        island.run(rotateForRandomAngle())
-        island.run(move(from: island.position))
-        return island
+    static func populate(at point: CGPoint?) -> Island {
+            let islandImageName = configureName()
+            let island = Island(imageNamed: islandImageName)
+            island.setScale(randomScaleFactor)
+            island.position = point ?? randomPoint()
+            island.zPosition = 1
+            island.name = "removableSprite"
+            island.anchorPoint = CGPoint(x: 0.5, y: 1.0)
+            island.run(rotateForRandomAngle())
+            island.run(move(from: island.position))
+            return island
     }
     
     fileprivate static var randomScaleFactor: CGFloat {
