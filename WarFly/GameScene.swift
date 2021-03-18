@@ -156,19 +156,14 @@ class GameScene: SKScene {
 extension GameScene: SKPhysicsContactDelegate {
     
     func didBegin(_ contact: SKPhysicsContact) {
-        let bodyA = contact.bodyA.categoryBitMask
-        let bodyB = contact.bodyB.categoryBitMask
-        let player = BitMaskCategory.player
-        let enemy = BitMaskCategory.enemy
-        let shot = BitMaskCategory.shot
-        let powerUp = BitMaskCategory.powerUp
         
-        if bodyA == player && bodyB == enemy || bodyB == player && bodyA == enemy {
-            
-        } else if bodyA == enemy && bodyB == shot || bodyB == enemy && bodyA == shot {
-            
-        } else if bodyA == player && bodyB == powerUp || bodyB == player && bodyA == powerUp{
-            
+        let contactCategory:BitMaskCategory = [contact.bodyA.category, contact.bodyB.category]
+        
+        switch contactCategory {
+        case [.enemy, .player]: print("enemy vs player")
+        case [.powerUp, .player]: print("powerUp vs player")
+        case [.shot, .enemy]: print("shot vs enemy")
+        default: preconditionFailure("Failure to detect collision category")
         }
     }
     
