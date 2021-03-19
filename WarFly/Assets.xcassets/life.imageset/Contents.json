@@ -1,0 +1,26 @@
+{
+  "images" : [
+    {
+      "filename" : "life.png",
+      "idiom" : "universal",
+      "locale" : "SwiftBook",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "life@2x.png",
+      "idiom" : "universal",
+      "locale" : "SwiftBook",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "life@3x.png",
+      "idiom" : "universal",
+      "locale" : "SwiftBook",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
