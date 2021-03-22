@@ -23,6 +23,7 @@
 		5B1E4A6425FB6018001CE8C5 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1E4A6325FB6018001CE8C5 /* MenuScene.swift */; };
 		5B1E4A6F25FB6531001CE8C5 /* BitMaskCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1E4A6E25FB6531001CE8C5 /* BitMaskCategory.swift */; };
 		5B431BB426087CA400E21C7F /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B431BB326087CA400E21C7F /* HUD.swift */; };
+		5B431BD526088FDB00E21C7F /* ButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B431BD426088FDB00E21C7F /* ButtonNode.swift */; };
 		5B4D5AF225D4823E00C12060 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4D5AF125D4823E00C12060 /* Cloud.swift */; };
 		5B5ABCF125A779E40088BEA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5ABCF025A779E40088BEA1 /* AppDelegate.swift */; };
 		5B5ABCF725A779E40088BEA1 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5ABCF625A779E40088BEA1 /* GameScene.swift */; };
@@ -72,6 +73,7 @@
 		5B1E4A6325FB6018001CE8C5 /* MenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
 		5B1E4A6E25FB6531001CE8C5 /* BitMaskCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitMaskCategory.swift; sourceTree = "<group>"; };
 		5B431BB326087CA400E21C7F /* HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
+		5B431BD426088FDB00E21C7F /* ButtonNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ButtonNode.swift; path = WarFly/Classes/ButtonNode.swift; sourceTree = SOURCE_ROOT; };
 		5B4D5AF125D4823E00C12060 /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
 		5B5ABCED25A779E40088BEA1 /* WarFly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WarFly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B5ABCF025A779E40088BEA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 		5B431BC426087ECE00E21C7F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				5B431BD426088FDB00E21C7F /* ButtonNode.swift */,
 				5B860AE625B652630029D3FD /* Background.swift */,
 				5B431BB326087CA400E21C7F /* HUD.swift */,
 				5B10FB1025D30C1C00F7ADB6 /* Island.swift */,
@@ -397,6 +400,7 @@
 				5B431BB426087CA400E21C7F /* HUD.swift in Sources */,
 				5B1E4A4325FA0C29001CE8C5 /* Shot.swift in Sources */,
 				5B860AE725B652630029D3FD /* Background.swift in Sources */,
+				5B431BD526088FDB00E21C7F /* ButtonNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

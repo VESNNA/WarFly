@@ -1,0 +1,26 @@
+{
+  "images" : [
+    {
+      "filename" : "music.png",
+      "idiom" : "universal",
+      "locale" : "SwiftBook",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "music@2x.png",
+      "idiom" : "universal",
+      "locale" : "SwiftBook",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "music@3x.png",
+      "idiom" : "universal",
+      "locale" : "SwiftBook",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
