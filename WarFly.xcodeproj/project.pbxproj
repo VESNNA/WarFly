@@ -22,6 +22,7 @@
 		5B1E4A5025FB5CA8001CE8C5 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1E4A4F25FB5CA8001CE8C5 /* Assets.swift */; };
 		5B1E4A6425FB6018001CE8C5 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1E4A6325FB6018001CE8C5 /* MenuScene.swift */; };
 		5B1E4A6F25FB6531001CE8C5 /* BitMaskCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1E4A6E25FB6531001CE8C5 /* BitMaskCategory.swift */; };
+		5B431BB426087CA400E21C7F /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B431BB326087CA400E21C7F /* HUD.swift */; };
 		5B4D5AF225D4823E00C12060 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4D5AF125D4823E00C12060 /* Cloud.swift */; };
 		5B5ABCF125A779E40088BEA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5ABCF025A779E40088BEA1 /* AppDelegate.swift */; };
 		5B5ABCF725A779E40088BEA1 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5ABCF625A779E40088BEA1 /* GameScene.swift */; };
@@ -70,6 +71,7 @@
 		5B1E4A4F25FB5CA8001CE8C5 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		5B1E4A6325FB6018001CE8C5 /* MenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
 		5B1E4A6E25FB6531001CE8C5 /* BitMaskCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitMaskCategory.swift; sourceTree = "<group>"; };
+		5B431BB326087CA400E21C7F /* HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
 		5B4D5AF125D4823E00C12060 /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
 		5B5ABCED25A779E40088BEA1 /* WarFly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WarFly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B5ABCF025A779E40088BEA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +116,82 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B431BBE26087E4B00E21C7F /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				5B5ABCFA25A779E40088BEA1 /* Main.storyboard */,
+				5B1CCCBC25DC68DC00F96CD1 /* Info.plist */,
+				5B5ABCFD25A779EB0088BEA1 /* Assets.xcassets */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		5B431BBF26087E6E00E21C7F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5B5ABCF825A779E40088BEA1 /* GameViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5B431BC326087E8600E21C7F /* Protocols + Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5BF73A2925D86EB200FEB7C1 /* GameBackgroundSpriteable.swift */,
+			);
+			path = "Protocols + Extensions";
+			sourceTree = "<group>";
+		};
+		5B431BC426087ECE00E21C7F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5B860AE625B652630029D3FD /* Background.swift */,
+				5B431BB326087CA400E21C7F /* HUD.swift */,
+				5B10FB1025D30C1C00F7ADB6 /* Island.swift */,
+				5B4D5AF125D4823E00C12060 /* Cloud.swift */,
+				5BBEB1EB25D5D92D00DD49A4 /* PlayerPlane.swift */,
+				5B0EC9FC25F67CDA0068C55C /* Enemy.swift */,
+				5B1CCCB125DC659F00F96CD1 /* PowerUp.swift */,
+				5B0ECA2125F81D660068C55C /* BluePowerUp.swift */,
+				5B0ECA2625F81D860068C55C /* GreenPowerUp.swift */,
+				5B1E4A4225FA0C29001CE8C5 /* Shot.swift */,
+				5B1E4A4A25FA0E1D001CE8C5 /* YellowShot.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		5B431BC526087EE300E21C7F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				5B5ABCF025A779E40088BEA1 /* AppDelegate.swift */,
+				5B1E4A4F25FB5CA8001CE8C5 /* Assets.swift */,
+				5B1E4A6E25FB6531001CE8C5 /* BitMaskCategory.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		5B431BC626087EF600E21C7F /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				5B5ABCF625A779E40088BEA1 /* GameScene.swift */,
+				5B1E4A6325FB6018001CE8C5 /* MenuScene.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		5B431BC72608801700E21C7F /* Atlases */ = {
+			isa = PBXGroup;
+			children = (
+				5B1E4A3D25FA0BA4001CE8C5 /* YellowAmmo.atlas */,
+				5B0ECA2E25F81E1E0068C55C /* Enemy_1.atlas */,
+				5B0ECA0125F801FD0068C55C /* Enemy_2.atlas */,
+				5B0ECA0925F80BAE0068C55C /* BluePowerUp.atlas */,
+				5B1CCCB725DC665600F96CD1 /* GreenPowerUp.atlas */,
+				5BBEB1F025D5D9FA00DD49A4 /* PlayerPlane.atlas */,
+			);
+			path = Atlases;
+			sourceTree = "<group>";
+		};
 		5B5ABCE425A779E40088BEA1 = {
 			isa = PBXGroup;
 			children = (
@@ -137,32 +215,13 @@
 		5B5ABCEF25A779E40088BEA1 /* WarFly */ = {
 			isa = PBXGroup;
 			children = (
-				5B5ABCF025A779E40088BEA1 /* AppDelegate.swift */,
-				5B5ABCF625A779E40088BEA1 /* GameScene.swift */,
-				5B5ABCF825A779E40088BEA1 /* GameViewController.swift */,
-				5BF73A2925D86EB200FEB7C1 /* GameBackgroundSpriteable.swift */,
-				5B860AE625B652630029D3FD /* Background.swift */,
-				5B10FB1025D30C1C00F7ADB6 /* Island.swift */,
-				5B4D5AF125D4823E00C12060 /* Cloud.swift */,
-				5BBEB1EB25D5D92D00DD49A4 /* PlayerPlane.swift */,
-				5B0EC9FC25F67CDA0068C55C /* Enemy.swift */,
-				5B1CCCB125DC659F00F96CD1 /* PowerUp.swift */,
-				5B0ECA2125F81D660068C55C /* BluePowerUp.swift */,
-				5B0ECA2625F81D860068C55C /* GreenPowerUp.swift */,
-				5B1E4A4225FA0C29001CE8C5 /* Shot.swift */,
-				5B1E4A4A25FA0E1D001CE8C5 /* YellowShot.swift */,
-				5B1E4A4F25FB5CA8001CE8C5 /* Assets.swift */,
-				5B1E4A6325FB6018001CE8C5 /* MenuScene.swift */,
-				5B1E4A6E25FB6531001CE8C5 /* BitMaskCategory.swift */,
-				5B5ABCFA25A779E40088BEA1 /* Main.storyboard */,
-				5B1CCCBC25DC68DC00F96CD1 /* Info.plist */,
-				5B5ABCFD25A779EB0088BEA1 /* Assets.xcassets */,
-				5B1E4A3D25FA0BA4001CE8C5 /* YellowAmmo.atlas */,
-				5B0ECA2E25F81E1E0068C55C /* Enemy_1.atlas */,
-				5B0ECA0125F801FD0068C55C /* Enemy_2.atlas */,
-				5B0ECA0925F80BAE0068C55C /* BluePowerUp.atlas */,
-				5B1CCCB725DC665600F96CD1 /* GreenPowerUp.atlas */,
-				5BBEB1F025D5D9FA00DD49A4 /* PlayerPlane.atlas */,
+				5B431BC626087EF600E21C7F /* Scenes */,
+				5B431BBF26087E6E00E21C7F /* Controllers */,
+				5B431BC326087E8600E21C7F /* Protocols + Extensions */,
+				5B431BC426087ECE00E21C7F /* Classes */,
+				5B431BC526087EE300E21C7F /* Managers */,
+				5B431BBE26087E4B00E21C7F /* Supporting files */,
+				5B431BC72608801700E21C7F /* Atlases */,
 			);
 			path = WarFly;
 			sourceTree = "<group>";
@@ -335,6 +394,7 @@
 				5B1CCCB225DC659F00F96CD1 /* PowerUp.swift in Sources */,
 				5B1E4A6F25FB6531001CE8C5 /* BitMaskCategory.swift in Sources */,
 				5B1E4A6425FB6018001CE8C5 /* MenuScene.swift in Sources */,
+				5B431BB426087CA400E21C7F /* HUD.swift in Sources */,
 				5B1E4A4325FA0C29001CE8C5 /* Shot.swift in Sources */,
 				5B860AE725B652630029D3FD /* Background.swift in Sources */,
 			);
