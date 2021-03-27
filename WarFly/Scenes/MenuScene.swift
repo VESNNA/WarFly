@@ -23,11 +23,11 @@ class MenuScene: SKScene {
         
         let titles = ["play", "options", "best"]
         for (index, title) in titles.enumerated() {
-            let butonn = ButtonNode(titled: title, backgoundName: "button_backgound")
-            butonn.position = CGPoint(x: self.frame.midX, y: self.frame.midY - CGFloat(100 * index))
-            butonn.name = title
-            butonn.label.name = title
-            addChild(butonn)
+            let button = ButtonNode(titled: title, backgoundName: "button_backgound")
+            button.position = CGPoint(x: self.frame.midX, y: self.frame.midY - CGFloat(100 * index))
+            button.name = title
+            button.label.name = title
+            addChild(button)
         }
     }
     
