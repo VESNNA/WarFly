@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5B053D5F260EBB63003F63C5 /* PauseScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B053D5E260EBB63003F63C5 /* PauseScene.swift */; };
+		5B053D64260EBDF8003F63C5 /* SceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B053D63260EBDF8003F63C5 /* SceneManager.swift */; };
 		5B0EC9FD25F67CDA0068C55C /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0EC9FC25F67CDA0068C55C /* Enemy.swift */; };
 		5B0ECA0225F801FD0068C55C /* Enemy_2.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 5B0ECA0125F801FD0068C55C /* Enemy_2.atlas */; };
 		5B0ECA0A25F80BAE0068C55C /* BluePowerUp.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 5B0ECA0925F80BAE0068C55C /* BluePowerUp.atlas */; };
@@ -58,6 +59,7 @@
 
 /* Begin PBXFileReference section */
 		5B053D5E260EBB63003F63C5 /* PauseScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseScene.swift; sourceTree = "<group>"; };
+		5B053D63260EBDF8003F63C5 /* SceneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneManager.swift; sourceTree = "<group>"; };
 		5B0EC9FC25F67CDA0068C55C /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
 		5B0ECA0125F801FD0068C55C /* Enemy_2.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Enemy_2.atlas; sourceTree = "<group>"; };
 		5B0ECA0925F80BAE0068C55C /* BluePowerUp.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = BluePowerUp.atlas; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				5B5ABCF025A779E40088BEA1 /* AppDelegate.swift */,
 				5B1E4A4F25FB5CA8001CE8C5 /* Assets.swift */,
 				5B1E4A6E25FB6531001CE8C5 /* BitMaskCategory.swift */,
+				5B053D63260EBDF8003F63C5 /* SceneManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -178,8 +181,8 @@
 		5B431BC626087EF600E21C7F /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				5B5ABCF625A779E40088BEA1 /* GameScene.swift */,
 				5B1E4A6325FB6018001CE8C5 /* MenuScene.swift */,
+				5B5ABCF625A779E40088BEA1 /* GameScene.swift */,
 				5B053D5E260EBB63003F63C5 /* PauseScene.swift */,
 			);
 			path = Scenes;
@@ -395,6 +398,7 @@
 				5B10FB1125D30C1C00F7ADB6 /* Island.swift in Sources */,
 				5B1E4A5025FB5CA8001CE8C5 /* Assets.swift in Sources */,
 				5B0EC9FD25F67CDA0068C55C /* Enemy.swift in Sources */,
+				5B053D64260EBDF8003F63C5 /* SceneManager.swift in Sources */,
 				5B0ECA2725F81D860068C55C /* GreenPowerUp.swift in Sources */,
 				5BF73A2A25D86EB200FEB7C1 /* GameBackgroundSpriteable.swift in Sources */,
 				5B1CCCB225DC659F00F96CD1 /* PowerUp.swift in Sources */,
