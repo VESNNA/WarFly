@@ -9,7 +9,7 @@ import SpriteKit
 
 class ButtonNode: SKSpriteNode {
     let label: SKLabelNode = {
-        let text = SKLabelNode(text: "labelText")
+        let text = SKLabelNode(text: "")
         text.fontColor = UIColor(red: 219/255, green: 226/255, blue: 215/255, alpha: 1)
         text.fontName = "AmericanTypewriter-Bold"
         text.fontSize = 30
@@ -19,10 +19,12 @@ class ButtonNode: SKSpriteNode {
         return text
     }()
     
-    init(titled title: String, backgoundName: String) {
+    init(titled title: String?, backgoundName: String) {
         let texture = SKTexture(imageNamed: backgoundName)
         super.init(texture: texture, color: .clear, size: texture.size())
-        label.text = title.uppercased()
+        if let title = title {
+            label.text = title.uppercased()
+        }
         addChild(label)
     }
     
