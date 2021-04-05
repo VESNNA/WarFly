@@ -12,6 +12,8 @@
 		5B053D6C2615198C003F63C5 /* ParentScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B053D6B2615198C003F63C5 /* ParentScene.swift */; };
 		5B053D7126151BA2003F63C5 /* OptionsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B053D7026151BA2003F63C5 /* OptionsScene.swift */; };
 		5B053D76261B3A71003F63C5 /* BestScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B053D75261B3A71003F63C5 /* BestScene.swift */; };
+		5B053D7C261BADE0003F63C5 /* EnemyExplosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5B053D7A261BADE0003F63C5 /* EnemyExplosion.sks */; };
+		5B053D7D261BADE0003F63C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B053D7B261BADE0003F63C5 /* Assets.xcassets */; };
 		5B0EC9FD25F67CDA0068C55C /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0EC9FC25F67CDA0068C55C /* Enemy.swift */; };
 		5B0ECA0225F801FD0068C55C /* Enemy_2.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 5B0ECA0125F801FD0068C55C /* Enemy_2.atlas */; };
 		5B0ECA0A25F80BAE0068C55C /* BluePowerUp.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 5B0ECA0925F80BAE0068C55C /* BluePowerUp.atlas */; };
@@ -66,6 +68,8 @@
 		5B053D6B2615198C003F63C5 /* ParentScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentScene.swift; sourceTree = "<group>"; };
 		5B053D7026151BA2003F63C5 /* OptionsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsScene.swift; sourceTree = "<group>"; };
 		5B053D75261B3A71003F63C5 /* BestScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestScene.swift; sourceTree = "<group>"; };
+		5B053D7A261BADE0003F63C5 /* EnemyExplosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = EnemyExplosion.sks; sourceTree = "<group>"; };
+		5B053D7B261BADE0003F63C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B0EC9FC25F67CDA0068C55C /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
 		5B0ECA0125F801FD0068C55C /* Enemy_2.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Enemy_2.atlas; sourceTree = "<group>"; };
 		5B0ECA0925F80BAE0068C55C /* BluePowerUp.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = BluePowerUp.atlas; sourceTree = "<group>"; };
@@ -128,6 +132,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B053D81261BADE9003F63C5 /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				5B053D7A261BADE0003F63C5 /* EnemyExplosion.sks */,
+			);
+			path = Particles;
+			sourceTree = "<group>";
+		};
 		5B431BBE26087E4B00E21C7F /* Supporting files */ = {
 			isa = PBXGroup;
 			children = (
@@ -240,6 +252,8 @@
 				5B431BC526087EE300E21C7F /* Managers */,
 				5B431BBE26087E4B00E21C7F /* Supporting files */,
 				5B431BC72608801700E21C7F /* Atlases */,
+				5B053D81261BADE9003F63C5 /* Particles */,
+				5B053D7B261BADE0003F63C5 /* Assets.xcassets */,
 			);
 			path = WarFly;
 			sourceTree = "<group>";
@@ -366,8 +380,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B1CCCB825DC665600F96CD1 /* GreenPowerUp.atlas in Resources */,
+				5B053D7C261BADE0003F63C5 /* EnemyExplosion.sks in Resources */,
 				5B1E4A3E25FA0BA4001CE8C5 /* YellowAmmo.atlas in Resources */,
 				5B0ECA0A25F80BAE0068C55C /* BluePowerUp.atlas in Resources */,
+				5B053D7D261BADE0003F63C5 /* Assets.xcassets in Resources */,
 				5BBEB1F125D5D9FA00DD49A4 /* PlayerPlane.atlas in Resources */,
 				5B0ECA2F25F81E1E0068C55C /* Enemy_1.atlas in Resources */,
 				5B5ABCFC25A779E40088BEA1 /* Main.storyboard in Resources */,
