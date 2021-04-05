@@ -13,6 +13,26 @@ class GameScene: ParentScene {
     fileprivate var player: PlayerPlane!
     fileprivate let hud = HUD()
     fileprivate let screenSize = UIScreen.main.bounds.size
+    fileprivate var lives = 3 {
+        didSet {
+            switch lives {
+            case 3:
+                hud.life1.isHidden = false
+                hud.life2.isHidden = false
+                hud.life3.isHidden = false
+            case 2:
+                hud.life1.isHidden = false
+                hud.life2.isHidden = false
+                hud.life3.isHidden = true
+            case 1:
+                hud.life1.isHidden = false
+                hud.life2.isHidden = true
+                hud.life3.isHidden = true
+            default:
+                break
+            }
+        }
+    }
     
     override func didMove(to view: SKView) {
         
@@ -195,9 +215,15 @@ extension GameScene: SKPhysicsContactDelegate {
         case [.enemy, .player]: print("enemy vs player")
             
             if contact.bodyA.node?.name == "removableSprite" {
-                contact.bodyA.node?.removeFromParent()
+                if contact.bodyA.node?.parent != nil {
+                    contact.bodyA.node?.removeFromParent()
+                    lives -= 1
+                }
             } else {
-                contact.bodyB.node?.removeFromParent()
+                if contact.bodyB.node?.parent != nil {
+                    contact.bodyB.node?.removeFromParent()
+                    lives -= 1
+                }
             }
             addChild(explosion!)
             self.run(waitForExplosion) { explosion?.removeFromParent() }
