@@ -14,6 +14,7 @@
 		5B053D76261B3A71003F63C5 /* BestScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B053D75261B3A71003F63C5 /* BestScene.swift */; };
 		5B053D7C261BADE0003F63C5 /* EnemyExplosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5B053D7A261BADE0003F63C5 /* EnemyExplosion.sks */; };
 		5B053D7D261BADE0003F63C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B053D7B261BADE0003F63C5 /* Assets.xcassets */; };
+		5B053D86261BB337003F63C5 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B053D85261BB337003F63C5 /* GameOverScene.swift */; };
 		5B0EC9FD25F67CDA0068C55C /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0EC9FC25F67CDA0068C55C /* Enemy.swift */; };
 		5B0ECA0225F801FD0068C55C /* Enemy_2.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 5B0ECA0125F801FD0068C55C /* Enemy_2.atlas */; };
 		5B0ECA0A25F80BAE0068C55C /* BluePowerUp.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 5B0ECA0925F80BAE0068C55C /* BluePowerUp.atlas */; };
@@ -70,6 +71,7 @@
 		5B053D75261B3A71003F63C5 /* BestScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestScene.swift; sourceTree = "<group>"; };
 		5B053D7A261BADE0003F63C5 /* EnemyExplosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = EnemyExplosion.sks; sourceTree = "<group>"; };
 		5B053D7B261BADE0003F63C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5B053D85261BB337003F63C5 /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
 		5B0EC9FC25F67CDA0068C55C /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
 		5B0ECA0125F801FD0068C55C /* Enemy_2.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Enemy_2.atlas; sourceTree = "<group>"; };
 		5B0ECA0925F80BAE0068C55C /* BluePowerUp.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = BluePowerUp.atlas; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 				5B053D6B2615198C003F63C5 /* ParentScene.swift */,
 				5B053D7026151BA2003F63C5 /* OptionsScene.swift */,
 				5B053D75261B3A71003F63C5 /* BestScene.swift */,
+				5B053D85261BB337003F63C5 /* GameOverScene.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -423,6 +426,7 @@
 				5B10FB1125D30C1C00F7ADB6 /* Island.swift in Sources */,
 				5B1E4A5025FB5CA8001CE8C5 /* Assets.swift in Sources */,
 				5B0EC9FD25F67CDA0068C55C /* Enemy.swift in Sources */,
+				5B053D86261BB337003F63C5 /* GameOverScene.swift in Sources */,
 				5B053D64260EBDF8003F63C5 /* SceneManager.swift in Sources */,
 				5B0ECA2725F81D860068C55C /* GreenPowerUp.swift in Sources */,
 				5BF73A2A25D86EB200FEB7C1 /* GameBackgroundSpriteable.swift in Sources */,
