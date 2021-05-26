@@ -19,8 +19,8 @@ class ButtonNode: SKSpriteNode {
         return text
     }()
     
-    init(titled title: String?, backgoundName: String) {
-        let texture = SKTexture(imageNamed: backgoundName)
+    init(titled title: String?, backgroundName: String) {
+        let texture = SKTexture(imageNamed: backgroundName)
         super.init(texture: texture, color: .clear, size: texture.size())
         if let title = title {
             label.text = title.uppercased()

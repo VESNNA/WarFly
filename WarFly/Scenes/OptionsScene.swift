@@ -20,18 +20,18 @@ class OptionsScene: ParentScene {
         setHeader(withName: "options", andBackground: "header_background")
         
         let backgroundNameForMusic = isMusic == true ? "music" : "nomusic"
-        let musicBtn = ButtonNode(titled: nil, backgoundName: backgroundNameForMusic)
+        let musicBtn = ButtonNode(titled: nil, backgroundName: backgroundNameForMusic)
         musicBtn.position = CGPoint(x: self.frame.midX - 50, y: self.frame.midY)
         musicBtn.name = "music"
         musicBtn.label.isHidden = true
         
         let backgroundNameForSound = isSound == true ? "sound" : "nosound"
-        let soundBtn = ButtonNode(titled: nil, backgoundName: backgroundNameForSound)
+        let soundBtn = ButtonNode(titled: nil, backgroundName: backgroundNameForSound)
         soundBtn.position = CGPoint(x: self.frame.midX + 50, y: self.frame.midY)
         soundBtn.name = "sound"
         soundBtn.label.isHidden = true
         
-        let backBtn = ButtonNode(titled: "back", backgoundName: "button_background")
+        let backBtn = ButtonNode(titled: "back", backgroundName: "button_background")
         backBtn.position = CGPoint(x: self.frame.midX, y: self.frame.midY - 100)
         backBtn.name = "back"
         backBtn.label.isHidden = true

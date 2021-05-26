@@ -15,7 +15,7 @@ class GameOverScene: ParentScene {
         
         let titles = ["restart", "options", "best"]
         for (index, title) in titles.enumerated() {
-            let button = ButtonNode(titled: title, backgoundName: "button_background")
+            let button = ButtonNode(titled: title, backgroundName: "button_background")
             button.position = CGPoint(x: self.frame.midX, y: self.frame.midY - CGFloat(100 * index))
             button.name = title
             button.label.name = title
