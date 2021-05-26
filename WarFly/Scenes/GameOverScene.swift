@@ -11,11 +11,11 @@ class GameOverScene: ParentScene {
     
     override func didMove(to view: SKView) {
         
-        setHeader(withName: "game over", andBackground: "header_backgound")
+        setHeader(withName: "game over", andBackground: "header_background")
         
         let titles = ["restart", "options", "best"]
         for (index, title) in titles.enumerated() {
-            let button = ButtonNode(titled: title, backgoundName: "button_backgound")
+            let button = ButtonNode(titled: title, backgoundName: "button_background")
             button.position = CGPoint(x: self.frame.midX, y: self.frame.midY - CGFloat(100 * index))
             button.name = title
             button.label.name = title

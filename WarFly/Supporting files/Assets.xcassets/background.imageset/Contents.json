@@ -2,19 +2,16 @@
   "images" : [
     {
       "idiom" : "universal",
-      "locale" : "SwiftBook",
       "scale" : "1x"
     },
     {
       "filename" : "background@2x.jpg",
       "idiom" : "universal",
-      "locale" : "SwiftBook",
       "scale" : "2x"
     },
     {
       "filename" : "background@3x.jpg",
       "idiom" : "universal",
-      "locale" : "SwiftBook",
       "scale" : "3x"
     }
   ],

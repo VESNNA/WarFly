@@ -40,31 +40,12 @@
 		5B5ABCF725A779E40088BEA1 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5ABCF625A779E40088BEA1 /* GameScene.swift */; };
 		5B5ABCF925A779E40088BEA1 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5ABCF825A779E40088BEA1 /* GameViewController.swift */; };
 		5B5ABCFC25A779E40088BEA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B5ABCFA25A779E40088BEA1 /* Main.storyboard */; };
-		5B5ABCFE25A779EB0088BEA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B5ABCFD25A779EB0088BEA1 /* Assets.xcassets */; };
-		5B5ABD0925A779EC0088BEA1 /* WarFlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5ABD0825A779EC0088BEA1 /* WarFlyTests.swift */; };
-		5B5ABD1425A779EC0088BEA1 /* WarFlyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5ABD1325A779EC0088BEA1 /* WarFlyUITests.swift */; };
+		5B841E8D265E2DDB008259EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B5ABCFD25A779EB0088BEA1 /* Assets.xcassets */; };
 		5B860AE725B652630029D3FD /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B860AE625B652630029D3FD /* Background.swift */; };
 		5BBEB1EC25D5D92D00DD49A4 /* PlayerPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBEB1EB25D5D92D00DD49A4 /* PlayerPlane.swift */; };
 		5BBEB1F125D5D9FA00DD49A4 /* PlayerPlane.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 5BBEB1F025D5D9FA00DD49A4 /* PlayerPlane.atlas */; };
 		5BF73A2A25D86EB200FEB7C1 /* GameBackgroundSpriteable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF73A2925D86EB200FEB7C1 /* GameBackgroundSpriteable.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		5B5ABD0525A779EC0088BEA1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5B5ABCE525A779E40088BEA1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5B5ABCEC25A779E40088BEA1;
-			remoteInfo = WarFly;
-		};
-		5B5ABD1025A779EC0088BEA1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5B5ABCE525A779E40088BEA1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5B5ABCEC25A779E40088BEA1;
-			remoteInfo = WarFly;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5B053D5E260EBB63003F63C5 /* PauseScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseScene.swift; sourceTree = "<group>"; };
@@ -103,12 +84,6 @@
 		5B5ABCF825A779E40088BEA1 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		5B5ABCFB25A779E40088BEA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5B5ABCFD25A779EB0088BEA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5B5ABD0425A779EC0088BEA1 /* WarFlyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WarFlyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B5ABD0825A779EC0088BEA1 /* WarFlyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarFlyTests.swift; sourceTree = "<group>"; };
-		5B5ABD0A25A779EC0088BEA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B5ABD0F25A779EC0088BEA1 /* WarFlyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WarFlyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B5ABD1325A779EC0088BEA1 /* WarFlyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarFlyUITests.swift; sourceTree = "<group>"; };
-		5B5ABD1525A779EC0088BEA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B860AE625B652630029D3FD /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		5BBEB1EB25D5D92D00DD49A4 /* PlayerPlane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerPlane.swift; sourceTree = "<group>"; };
 		5BBEB1F025D5D9FA00DD49A4 /* PlayerPlane.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = PlayerPlane.atlas; sourceTree = "<group>"; };
@@ -117,20 +92,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		5B5ABCEA25A779E40088BEA1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B5ABD0125A779EC0088BEA1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B5ABD0C25A779EC0088BEA1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -238,18 +199,15 @@
 			isa = PBXGroup;
 			children = (
 				5B5ABCEF25A779E40088BEA1 /* WarFly */,
-				5B5ABD0725A779EC0088BEA1 /* WarFlyTests */,
-				5B5ABD1225A779EC0088BEA1 /* WarFlyUITests */,
 				5B5ABCEE25A779E40088BEA1 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		5B5ABCEE25A779E40088BEA1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				5B5ABCED25A779E40088BEA1 /* WarFly.app */,
-				5B5ABD0425A779EC0088BEA1 /* WarFlyTests.xctest */,
-				5B5ABD0F25A779EC0088BEA1 /* WarFlyUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -268,24 +226,6 @@
 				5B053D7B261BADE0003F63C5 /* Assets.xcassets */,
 			);
 			path = WarFly;
-			sourceTree = "<group>";
-		};
-		5B5ABD0725A779EC0088BEA1 /* WarFlyTests */ = {
-			isa = PBXGroup;
-			children = (
-				5B5ABD0825A779EC0088BEA1 /* WarFlyTests.swift */,
-				5B5ABD0A25A779EC0088BEA1 /* Info.plist */,
-			);
-			path = WarFlyTests;
-			sourceTree = "<group>";
-		};
-		5B5ABD1225A779EC0088BEA1 /* WarFlyUITests */ = {
-			isa = PBXGroup;
-			children = (
-				5B5ABD1325A779EC0088BEA1 /* WarFlyUITests.swift */,
-				5B5ABD1525A779EC0088BEA1 /* Info.plist */,
-			);
-			path = WarFlyUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,42 +248,6 @@
 			productReference = 5B5ABCED25A779E40088BEA1 /* WarFly.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5B5ABD0325A779EC0088BEA1 /* WarFlyTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5B5ABD1B25A779ED0088BEA1 /* Build configuration list for PBXNativeTarget "WarFlyTests" */;
-			buildPhases = (
-				5B5ABD0025A779EC0088BEA1 /* Sources */,
-				5B5ABD0125A779EC0088BEA1 /* Frameworks */,
-				5B5ABD0225A779EC0088BEA1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5B5ABD0625A779EC0088BEA1 /* PBXTargetDependency */,
-			);
-			name = WarFlyTests;
-			productName = WarFlyTests;
-			productReference = 5B5ABD0425A779EC0088BEA1 /* WarFlyTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		5B5ABD0E25A779EC0088BEA1 /* WarFlyUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5B5ABD1E25A779ED0088BEA1 /* Build configuration list for PBXNativeTarget "WarFlyUITests" */;
-			buildPhases = (
-				5B5ABD0B25A779EC0088BEA1 /* Sources */,
-				5B5ABD0C25A779EC0088BEA1 /* Frameworks */,
-				5B5ABD0D25A779EC0088BEA1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5B5ABD1125A779EC0088BEA1 /* PBXTargetDependency */,
-			);
-			name = WarFlyUITests;
-			productName = WarFlyUITests;
-			productReference = 5B5ABD0F25A779EC0088BEA1 /* WarFlyUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -355,14 +259,6 @@
 				TargetAttributes = {
 					5B5ABCEC25A779E40088BEA1 = {
 						CreatedOnToolsVersion = 12.3;
-					};
-					5B5ABD0325A779EC0088BEA1 = {
-						CreatedOnToolsVersion = 12.3;
-						TestTargetID = 5B5ABCEC25A779E40088BEA1;
-					};
-					5B5ABD0E25A779EC0088BEA1 = {
-						CreatedOnToolsVersion = 12.3;
-						TestTargetID = 5B5ABCEC25A779E40088BEA1;
 					};
 				};
 			};
@@ -380,8 +276,6 @@
 			projectRoot = "";
 			targets = (
 				5B5ABCEC25A779E40088BEA1 /* WarFly */,
-				5B5ABD0325A779EC0088BEA1 /* WarFlyTests */,
-				5B5ABD0E25A779EC0088BEA1 /* WarFlyUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -401,22 +295,8 @@
 				5B0ECA2F25F81E1E0068C55C /* Enemy_1.atlas in Resources */,
 				5B5ABCFC25A779E40088BEA1 /* Main.storyboard in Resources */,
 				5B0ECA0225F801FD0068C55C /* Enemy_2.atlas in Resources */,
+				5B841E8D265E2DDB008259EE /* Assets.xcassets in Resources */,
 				5B053D8D26210AE1003F63C5 /* hitSound.wav in Resources */,
-				5B5ABCFE25A779EB0088BEA1 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B5ABD0225A779EC0088BEA1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B5ABD0D25A779EC0088BEA1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,36 +336,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5B5ABD0025A779EC0088BEA1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B5ABD0925A779EC0088BEA1 /* WarFlyTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B5ABD0B25A779EC0088BEA1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B5ABD1425A779EC0088BEA1 /* WarFlyUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		5B5ABD0625A779EC0088BEA1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5B5ABCEC25A779E40088BEA1 /* WarFly */;
-			targetProxy = 5B5ABD0525A779EC0088BEA1 /* PBXContainerItemProxy */;
-		};
-		5B5ABD1125A779EC0088BEA1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5B5ABCEC25A779E40088BEA1 /* WarFly */;
-			targetProxy = 5B5ABD1025A779EC0088BEA1 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5B5ABCFA25A779E40088BEA1 /* Main.storyboard */ = {
@@ -653,90 +504,6 @@
 			};
 			name = Release;
 		};
-		5B5ABD1C25A779ED0088BEA1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MU6JB4A554;
-				INFOPLIST_FILE = WarFlyTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = prod.vesna.WarFlyTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WarFly.app/WarFly";
-			};
-			name = Debug;
-		};
-		5B5ABD1D25A779ED0088BEA1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MU6JB4A554;
-				INFOPLIST_FILE = WarFlyTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = prod.vesna.WarFlyTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WarFly.app/WarFly";
-			};
-			name = Release;
-		};
-		5B5ABD1F25A779ED0088BEA1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MU6JB4A554;
-				INFOPLIST_FILE = WarFlyUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = prod.vesna.WarFlyUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = WarFly;
-			};
-			name = Debug;
-		};
-		5B5ABD2025A779ED0088BEA1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MU6JB4A554;
-				INFOPLIST_FILE = WarFlyUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = prod.vesna.WarFlyUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = WarFly;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -754,24 +521,6 @@
 			buildConfigurations = (
 				5B5ABD1925A779ED0088BEA1 /* Debug */,
 				5B5ABD1A25A779ED0088BEA1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5B5ABD1B25A779ED0088BEA1 /* Build configuration list for PBXNativeTarget "WarFlyTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5B5ABD1C25A779ED0088BEA1 /* Debug */,
-				5B5ABD1D25A779ED0088BEA1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5B5ABD1E25A779ED0088BEA1 /* Build configuration list for PBXNativeTarget "WarFlyUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5B5ABD1F25A779ED0088BEA1 /* Debug */,
-				5B5ABD2025A779ED0088BEA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

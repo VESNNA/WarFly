@@ -2,19 +2,16 @@
   "images" : [
     {
       "idiom" : "universal",
-      "locale" : "SwiftBook",
       "scale" : "1x"
     },
     {
       "filename" : "is4@2x.png",
       "idiom" : "universal",
-      "locale" : "SwiftBook",
       "scale" : "2x"
     },
     {
       "filename" : "is4@3x.png",
       "idiom" : "universal",
-      "locale" : "SwiftBook",
       "scale" : "3x"
     }
   ],
