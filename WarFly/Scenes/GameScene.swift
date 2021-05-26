@@ -165,7 +165,6 @@ class GameScene: ParentScene {
         self.addChild(island2)
         
         player = PlayerPlane.populate(at: CGPoint(x: screen.size.width / 2, y: 100))
-        player = PlayerPlane.populate(at: CGPoint(x: screen.size.width/2, y: 100))
         self.addChild(player)
     }
     
