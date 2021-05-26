@@ -17,7 +17,7 @@
 		5B053D86261BB337003F63C5 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B053D85261BB337003F63C5 /* GameOverScene.swift */; };
 		5B053D8C26210AE1003F63C5 /* backgroundMusic.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5B053D8A26210AE1003F63C5 /* backgroundMusic.m4a */; };
 		5B053D8D26210AE1003F63C5 /* hitSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5B053D8B26210AE1003F63C5 /* hitSound.wav */; };
-		5B053D9226265831003F63C5 /* GameSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B053D9126265831003F63C5 /* GameSetting.swift */; };
+		5B053D9226265831003F63C5 /* GameSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B053D9126265831003F63C5 /* GameSettings.swift */; };
 		5B0EC9FD25F67CDA0068C55C /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0EC9FC25F67CDA0068C55C /* Enemy.swift */; };
 		5B0ECA0225F801FD0068C55C /* Enemy_2.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 5B0ECA0125F801FD0068C55C /* Enemy_2.atlas */; };
 		5B0ECA0A25F80BAE0068C55C /* BluePowerUp.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 5B0ECA0925F80BAE0068C55C /* BluePowerUp.atlas */; };
@@ -58,7 +58,7 @@
 		5B053D85261BB337003F63C5 /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
 		5B053D8A26210AE1003F63C5 /* backgroundMusic.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = backgroundMusic.m4a; sourceTree = "<group>"; };
 		5B053D8B26210AE1003F63C5 /* hitSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hitSound.wav; sourceTree = "<group>"; };
-		5B053D9126265831003F63C5 /* GameSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSetting.swift; sourceTree = "<group>"; };
+		5B053D9126265831003F63C5 /* GameSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSettings.swift; sourceTree = "<group>"; };
 		5B0EC9FC25F67CDA0068C55C /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
 		5B0ECA0125F801FD0068C55C /* Enemy_2.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Enemy_2.atlas; sourceTree = "<group>"; };
 		5B0ECA0925F80BAE0068C55C /* BluePowerUp.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = BluePowerUp.atlas; sourceTree = "<group>"; };
@@ -163,7 +163,7 @@
 				5B1E4A4F25FB5CA8001CE8C5 /* Assets.swift */,
 				5B1E4A6E25FB6531001CE8C5 /* BitMaskCategory.swift */,
 				5B053D63260EBDF8003F63C5 /* SceneManager.swift */,
-				5B053D9126265831003F63C5 /* GameSetting.swift */,
+				5B053D9126265831003F63C5 /* GameSettings.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -321,7 +321,7 @@
 				5B053D64260EBDF8003F63C5 /* SceneManager.swift in Sources */,
 				5B0ECA2725F81D860068C55C /* GreenPowerUp.swift in Sources */,
 				5BF73A2A25D86EB200FEB7C1 /* GameBackgroundSpriteable.swift in Sources */,
-				5B053D9226265831003F63C5 /* GameSetting.swift in Sources */,
+				5B053D9226265831003F63C5 /* GameSettings.swift in Sources */,
 				5B1CCCB225DC659F00F96CD1 /* PowerUp.swift in Sources */,
 				5B053D76261B3A71003F63C5 /* BestScene.swift in Sources */,
 				5B1E4A6F25FB6531001CE8C5 /* BitMaskCategory.swift in Sources */,

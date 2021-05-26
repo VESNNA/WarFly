@@ -9,7 +9,7 @@ import SpriteKit
 
 class ParentScene: SKScene {
     
-    let gameSettings = GameSetting()
+    let gameSettings = GameSettings()
     let sceneManager = SceneManager.shared
     var previousScene: SKScene?
     

@@ -1,5 +1,5 @@
 //
-//  GameSetting.swift
+//  GameSettings.swift
 //  WarFly
 //
 //  Created by Nikita Vesna on 14.04.2021.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class GameSetting: NSObject {
+class GameSettings: NSObject {
     
     let ud = UserDefaults.standard
     
